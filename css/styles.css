@@ -53,7 +53,7 @@ nav a:hover{
 
 .skip a:focus{
   background: white;
-  top: 20px;
+  top: 0;
   left: 0;
   padding: 6px;
   -webkit-transition: top 1s ease-out;
@@ -71,8 +71,7 @@ link to the exact top of the page.*/
 /*Add the selector and code to put a 2px black
 border around all elements in focus.*/
 :focus{
-  outline: none;
-  border-top: solid 2px black;
+  border: solid 2px black;
 }
 
 footer{
@@ -87,7 +86,7 @@ footer{
 nav{
   background-color: #ddd;
   padding: 20px 0;
-  text-align: center;
+  text-align: left;
   /*Your code here*/
   /*Span the top row*/
   grid-column: 1 / -1;
@@ -108,7 +107,7 @@ header{
   min-height: 400px;
   /* Span one row */
   grid-column: 1 / -1;
-  grid-row: 2 / auto;
+  grid-row: 2 / 3;
 }
 
 header p{
@@ -128,12 +127,12 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  grid-column: 2/auto;
+  grid-column: 2/3;
 }
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
 .about-image, .method-image, .clients-image, .contact-image{
    grid-column: 1 / span 3;
@@ -180,6 +179,7 @@ img {
     background-color: #ddd;
     text-align: right;
     padding: 35px 0px;
+    align-self: center;
   }
 
   .skip a:focus{
