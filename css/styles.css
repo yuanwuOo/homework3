@@ -130,9 +130,9 @@ header p{
   grid-column: 2/3;
 }
 
-/* img {
+img {
   width: 100%;
-} */
+}
 
 .about-image, .method-image, .clients-image, .contact-image{
    grid-column: 1 / span 3;
@@ -163,7 +163,7 @@ header p{
   position: relative;
   margin: auto;
   text-align: center;
-  max-height: 25%;
+  max-height: 25vh;
   overflow: scroll;
 }
 
